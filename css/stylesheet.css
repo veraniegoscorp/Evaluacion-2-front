@@ -1,0 +1,33 @@
+
+body {
+    background-image: url('../resources/fondo2.png');
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;  
+    margin: 0;                  
+}
+
+
+.main_container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    min-height: 100vh;        
+}
+
+
+.titulo_index {
+    background-image: url('../resources/Gemini_Generated_Image_pjuzrwpjuzrwpjuz.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*si se usa porcentajes el translate x habla sobre el tamaño de la IMAGEN para que se centre bien
+    porque el left 50% lo empuja desde la izquierda es como el word*/
+    height: 25vh; 
+    width: 40vw;
+}
