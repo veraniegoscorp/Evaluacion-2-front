@@ -41,12 +41,79 @@ body {
     width: 15vh;
     height: 15vh;
     transition: all 0.3s ease;
-
 }
 
 .ver_tipos_de_cafe:hover{
     border: 4px solid rgba(255, 255, 255, 0.25);
     transform: translateY(-50%) scale(1.05);
     cursor: pointer;
-    
+}
+
+/* crear pedido */
+.btn-crear {
+    background-image: url('../resources/iconoPedido.png');
+    background-color: #E6DCC8;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+    width: 15vh;
+    height: 15vh;
+    transition: all 0.3s ease;
+}
+
+/* crear pedido: animacion boton */
+.btn-crear:hover {
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    transform: translateY(-50%) scale(1.05);
+    cursor: pointer;
+}
+
+/*Fondo del navegador del carrusel-ver si eliminar o dejar*/
+.nav-cafe {
+    position: absolute;
+    top: 30vh; /* debajo del logo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+
+}
+
+
+/*VER SI DEJAR LISTA O SACARLA*/
+.nav-lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/*Disposicion y como se ven las opciones en el menu superior*/
+.nav-lista li{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 100px;
+    border: 10px springgreen;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: rgb(238, 0, 255);
+}
+
+.nav-lista li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+}
+
+/*Efecto hover para las opciones del menu superior al posicionar el cursor*/
+.nav-lista li:hover {
+    background: rgb(0, 208, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
 }
